@@ -76,8 +76,8 @@ class _AddEmployeeDetailsPageState
     setState(() {});
     final fields = _formKey.currentState?.fields;
     final to = fields?[AddEmployeesFormKeys.toDate]?.value as DateTime?;
-    final from = fields?[AddEmployeesFormKeys.fromDate]?.value as DateTime;
-    if (to != null && to.isBefore(from)) {
+    final from = fields?[AddEmployeesFormKeys.fromDate]?.value as DateTime?;
+    if (to != null && from != null && to.isBefore(from)) {
       fields?[AddEmployeesFormKeys.toDate]?.reset();
     }
   }
@@ -87,8 +87,8 @@ class _AddEmployeeDetailsPageState
     setState(() {});
     final fields = _formKey.currentState?.fields;
     final to = fields?[AddEmployeesFormKeys.toDate]?.value as DateTime?;
-    final from = fields?[AddEmployeesFormKeys.fromDate]?.value as DateTime;
-    if (to != null && to.isBefore(from)) {
+    final from = fields?[AddEmployeesFormKeys.fromDate]?.value as DateTime?;
+    if (to != null && from != null && to.isBefore(from)) {
       fields?[AddEmployeesFormKeys.toDate]?.reset();
     }
   }

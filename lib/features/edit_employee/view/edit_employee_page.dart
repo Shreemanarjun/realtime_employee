@@ -78,9 +78,9 @@ class _EditEmployeePageState extends ConsumerState<EditEmployeePage> {
     setState(() {});
     final fields = _formKey.currentState?.fields;
     final to = fields?[AddEmployeesFormKeys.toDate]?.value as DateTime?;
-    final from = fields?[AddEmployeesFormKeys.fromDate]?.value as DateTime;
-    if (to != null && to.isBefore(from)) {
-      fields?[AddEmployeesFormKeys.toDate]?.didChange(null);
+    final from = fields?[AddEmployeesFormKeys.fromDate]?.value as DateTime?;
+    if (to != null && from != null && to.isBefore(from)) {
+      fields?[AddEmployeesFormKeys.toDate]?.reset();
     }
   }
 
@@ -89,9 +89,9 @@ class _EditEmployeePageState extends ConsumerState<EditEmployeePage> {
     setState(() {});
     final fields = _formKey.currentState?.fields;
     final to = fields?[AddEmployeesFormKeys.toDate]?.value as DateTime?;
-    final from = fields?[AddEmployeesFormKeys.fromDate]?.value as DateTime;
-    if (to != null && to.isBefore(from)) {
-      fields?[AddEmployeesFormKeys.toDate]?.didChange(null);
+    final from = fields?[AddEmployeesFormKeys.fromDate]?.value as DateTime?;
+    if (to != null && from != null && to.isBefore(from)) {
+      fields?[AddEmployeesFormKeys.toDate]?.reset();
     }
   }
 
