@@ -1,0 +1,11 @@
+{
+  "es": [
+    "employees_list_title",
+    "add_employee_details_title",
+    "employee_name_hint",
+    "employee_name_required_error",
+    "employee_select_role",
+    "employee_select_role_required_error",
+    "edit_employee_details_title"
+  ]
+}

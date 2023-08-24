@@ -1,0 +1,14 @@
+{
+    "@@locale": "en",
+    "counterAppBarTitle": "Counter",
+    "@counterAppBarTitle": {
+        "description": "Text shown in the AppBar of the Counter Page"
+    },
+    "employees_list_title":"Employee List",
+    "add_employee_details_title":"Add Employee Details",
+    "employee_name_hint":"Employee Name",
+    "employee_name_required_error":"Please enter employee name",
+    "employee_select_role":"Select role",
+    "employee_select_role_required_error":"Please select employee role",
+    "edit_employee_details_title":"Edit Employee Details"
+}
